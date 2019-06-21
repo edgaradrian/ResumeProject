@@ -61,6 +61,54 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		6DB3AF8122BCB289007142B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DB3AF8522BCB2DA007142B5 /* view controllers */,
+				6DB3AF8422BCB2C9007142B5 /* storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DB3AF8222BCB29F007142B5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6DF777CA22BB1AC4008D4226 /* SessionInteractor.swift */,
+				6DF777CC22BB1F9A008D4226 /* JobStore.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6DB3AF8322BCB2B6007142B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DF777D022BB2A8D008D4226 /* Employment.xcdatamodeld */,
+				6DB3AF7922BC8C36007142B5 /* JobDataStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6DB3AF8422BCB2C9007142B5 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6DF777C122BACB34008D4226 /* LaunchScreen.storyboard */,
+				6DF777BC22BACB31008D4226 /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		6DB3AF8522BCB2DA007142B5 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6DB3AF7D22BCA20D007142B5 /* DetailJobViewController.swift */,
+				6DB3AF7F22BCA329007142B5 /* ExtensionJobViewController.swift */,
+				6DF777CE22BB21E9008D4226 /* IndexViewController.swift */,
+				6DB3AF7B22BC8EA4007142B5 /* JobViewController.swift */,
+				6DB3AF7722BC89D3007142B5 /* JobTableViewCell.swift */,
+			);
+			path = "view controllers";
+			sourceTree = "<group>";
+		};
 		6DF777AC22BACB31008D4226 = {
 			isa = PBXGroup;
 			children = (
@@ -80,21 +128,13 @@
 		6DF777B722BACB31008D4226 /* MyResumeApp */ = {
 			isa = PBXGroup;
 			children = (
+				6DB3AF8322BCB2B6007142B5 /* Model */,
+				6DB3AF8222BCB29F007142B5 /* Interactor */,
+				6DB3AF8122BCB289007142B5 /* View */,
 				6DB3AF7422BC7D4F007142B5 /* Utilities */,
 				6DF777B822BACB31008D4226 /* AppDelegate.swift */,
-				6DF777BC22BACB31008D4226 /* Main.storyboard */,
 				6DF777BF22BACB34008D4226 /* Assets.xcassets */,
-				6DF777C122BACB34008D4226 /* LaunchScreen.storyboard */,
 				6DF777C422BACB34008D4226 /* Info.plist */,
-				6DF777CA22BB1AC4008D4226 /* SessionInteractor.swift */,
-				6DF777CC22BB1F9A008D4226 /* JobStore.swift */,
-				6DF777CE22BB21E9008D4226 /* IndexViewController.swift */,
-				6DF777D022BB2A8D008D4226 /* Employment.xcdatamodeld */,
-				6DB3AF7722BC89D3007142B5 /* JobTableViewCell.swift */,
-				6DB3AF7922BC8C36007142B5 /* JobDataStore.swift */,
-				6DB3AF7B22BC8EA4007142B5 /* JobViewController.swift */,
-				6DB3AF7D22BCA20D007142B5 /* DetailJobViewController.swift */,
-				6DB3AF7F22BCA329007142B5 /* ExtensionJobViewController.swift */,
 			);
 			path = MyResumeApp;
 			sourceTree = "<group>";

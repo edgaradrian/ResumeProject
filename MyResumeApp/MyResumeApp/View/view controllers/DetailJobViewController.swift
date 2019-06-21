@@ -11,6 +11,7 @@ import UIKit
 class DetailJobViewController: UIViewController {
     
     @IBOutlet var labelActivities: UILabel!
+    @IBOutlet var labelPeriod: UILabel!
     
     var job: Job! {
         didSet {
@@ -20,7 +21,12 @@ class DetailJobViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelActivities.text = job.activities
+        setupLabels()
     }//viewDidLoad
+    
+    fileprivate func setupLabels(){
+        labelActivities.text = job.activities
+        labelPeriod.text = job.period
+    }
     
 }//DetailJobViewController
