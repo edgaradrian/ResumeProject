@@ -14,9 +14,33 @@ class IndexViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        jobStore.fetchJobs {
-            print("Hola")
-        }
     }//viewDidLoad
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillAppear(animated)
+    }//viewWillAppear
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
+    }//viewWillDisappear
+    
+    @IBAction func onEmploymentHistoryButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "segueEmploymentHistoryID", sender: self)
+    }//onEmploymentHistoryButtonTapped
+    
+    //MARK: Segue prepare
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "segueEmploymentHistoryID"?:
+            let jobViewController = segue.destination as! JobViewController
+            jobViewController.jobStore = jobStore
+            
+        default:
+            preconditionFailure("Unexpected segue identifier")
+        }//switch
+        
+    }//prepare(for segue:)
     
 }//IndexViewController

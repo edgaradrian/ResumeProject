@@ -19,7 +19,7 @@ struct SessionInteractor {
         }
         
         let fetchRequest: NSFetchRequest<Job> = Job.fetchRequest()
-        let predicate = NSPredicate(format: "\(#keyPath(Job.jobid)) == \(jobid)")
+        let predicate = NSPredicate(format: "jobid == %@", jobid)
         fetchRequest.predicate = predicate
         
         var fetchedJobs: [Job]?
@@ -45,8 +45,8 @@ struct SessionInteractor {
     
     static func jobs(fromJSON data: Data, into context: NSManagedObjectContext) -> JobsResult {
         do {
-            let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
             
+            let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
             guard let jsonDictionary = jsonObject as? [AnyHashable:Any], let jobsArray = jsonDictionary["jobs"] as? [[String:Any]] else {
                 return .failure(JobsError.invalidJSONData)
             }

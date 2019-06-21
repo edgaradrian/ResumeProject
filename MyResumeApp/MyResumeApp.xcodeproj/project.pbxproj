@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DB3AF7622BC7D6E007142B5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB3AF7522BC7D6E007142B5 /* RoundedButton.swift */; };
+		6DB3AF7822BC89D3007142B5 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB3AF7722BC89D3007142B5 /* JobTableViewCell.swift */; };
+		6DB3AF7A22BC8C36007142B5 /* JobDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB3AF7922BC8C36007142B5 /* JobDataStore.swift */; };
+		6DB3AF7C22BC8EA4007142B5 /* JobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB3AF7B22BC8EA4007142B5 /* JobViewController.swift */; };
+		6DB3AF7E22BCA20D007142B5 /* DetailJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB3AF7D22BCA20D007142B5 /* DetailJobViewController.swift */; };
+		6DB3AF8022BCA329007142B5 /* ExtensionJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB3AF7F22BCA329007142B5 /* ExtensionJobViewController.swift */; };
 		6DF777B922BACB31008D4226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF777B822BACB31008D4226 /* AppDelegate.swift */; };
 		6DF777BE22BACB31008D4226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF777BC22BACB31008D4226 /* Main.storyboard */; };
 		6DF777C022BACB34008D4226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF777BF22BACB34008D4226 /* Assets.xcassets */; };
@@ -18,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6DB3AF7522BC7D6E007142B5 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		6DB3AF7722BC89D3007142B5 /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		6DB3AF7922BC8C36007142B5 /* JobDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDataStore.swift; sourceTree = "<group>"; };
+		6DB3AF7B22BC8EA4007142B5 /* JobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewController.swift; sourceTree = "<group>"; };
+		6DB3AF7D22BCA20D007142B5 /* DetailJobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailJobViewController.swift; sourceTree = "<group>"; };
+		6DB3AF7F22BCA329007142B5 /* ExtensionJobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionJobViewController.swift; sourceTree = "<group>"; };
 		6DF777B522BACB31008D4226 /* MyResumeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyResumeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DF777B822BACB31008D4226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DF777BD22BACB31008D4226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DB3AF7422BC7D4F007142B5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6DB3AF7522BC7D6E007142B5 /* RoundedButton.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		6DF777AC22BACB31008D4226 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +80,7 @@
 		6DF777B722BACB31008D4226 /* MyResumeApp */ = {
 			isa = PBXGroup;
 			children = (
+				6DB3AF7422BC7D4F007142B5 /* Utilities */,
 				6DF777B822BACB31008D4226 /* AppDelegate.swift */,
 				6DF777BC22BACB31008D4226 /* Main.storyboard */,
 				6DF777BF22BACB34008D4226 /* Assets.xcassets */,
@@ -69,6 +90,11 @@
 				6DF777CC22BB1F9A008D4226 /* JobStore.swift */,
 				6DF777CE22BB21E9008D4226 /* IndexViewController.swift */,
 				6DF777D022BB2A8D008D4226 /* Employment.xcdatamodeld */,
+				6DB3AF7722BC89D3007142B5 /* JobTableViewCell.swift */,
+				6DB3AF7922BC8C36007142B5 /* JobDataStore.swift */,
+				6DB3AF7B22BC8EA4007142B5 /* JobViewController.swift */,
+				6DB3AF7D22BCA20D007142B5 /* DetailJobViewController.swift */,
+				6DB3AF7F22BCA329007142B5 /* ExtensionJobViewController.swift */,
 			);
 			path = MyResumeApp;
 			sourceTree = "<group>";
@@ -144,11 +170,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DB3AF8022BCA329007142B5 /* ExtensionJobViewController.swift in Sources */,
 				6DF777CB22BB1AC4008D4226 /* SessionInteractor.swift in Sources */,
+				6DB3AF7622BC7D6E007142B5 /* RoundedButton.swift in Sources */,
+				6DB3AF7C22BC8EA4007142B5 /* JobViewController.swift in Sources */,
 				6DF777D222BB2A8D008D4226 /* Employment.xcdatamodeld in Sources */,
+				6DB3AF7822BC89D3007142B5 /* JobTableViewCell.swift in Sources */,
 				6DF777CD22BB1F9A008D4226 /* JobStore.swift in Sources */,
 				6DF777B922BACB31008D4226 /* AppDelegate.swift in Sources */,
+				6DB3AF7E22BCA20D007142B5 /* DetailJobViewController.swift in Sources */,
 				6DF777CF22BB21E9008D4226 /* IndexViewController.swift in Sources */,
+				6DB3AF7A22BC8C36007142B5 /* JobDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
